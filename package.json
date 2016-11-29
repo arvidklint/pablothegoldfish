@@ -23,6 +23,7 @@
     "laravel-elixir-webpack-official": "^1.0.8"
   },
   "dependencies": {
-    "bootstrap-sass": "^3.3.7"
+    "bootstrap-sass": "^3.3.7",
+    "three": "^0.82.1"
   }
 }
