@@ -1,0 +1,47 @@
+// Custom colors
+$primary-color: #e29139;
+$primary-color-bright: #ffaf0a;
+$primary-color-dark: #7b4123;
+$secondary-color: #C9DD03;
+$secondary-color-dark: #9eaf07;
+
+// Body
+$body-bg: #0f0e00;
+$bg-color-medium: #2a2700;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $primary-color-dark;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Brands
+$brand-primary: #3097D1;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger:  #bf5329;
+
+// Typography
+$font-family-heading: 'Coda', cursive;
+$font-family-sans-serif: 'Lato', sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: #a1a1a1;
+$text-color-dark: #2f2f2f;
+
+// Navbar
+$navbar-default-bg: $primary-color;
+$nav-font-color: white;
+
+// Buttons
+$btn-default-color: $text-color;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;

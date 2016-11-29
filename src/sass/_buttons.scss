@@ -1,0 +1,63 @@
+.btn{
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: none;
+    -webkit-transition: background 0.25s;
+    -moz-transition: background 0.25s;
+    -ms-transition: background 0.25s;
+    -o-transition: background 0.25s;
+    transition: background 0.25s;
+
+    &:hover, &:active, &:focus{
+        color: white;
+    }
+
+    &.btn-primary{
+        background: $primary-color;
+
+        &:hover, &:active, &:focus{
+            background: $primary-color-dark;
+        }
+    }
+
+    &.btn-secondary{
+        background: $secondary-color;
+
+        &:hover, &:active, &:focus{
+            background: $secondary-color-dark;
+        }
+    }
+
+    &.btn-link{
+        color: $brand-info;
+    }
+
+    &.btn-round{
+        -webkit-border-radius: 5rem;
+        -moz-border-radius: 5rem;
+        border-radius: 5rem;
+    }
+
+    &.btn-padded{
+        padding: 1rem 2rem;
+    }
+
+    &.btn-lg{
+        font-size: 2rem;
+        padding: 1.5rem 4rem;
+        font-weight: 400;
+    }
+}
+
+.share-buttons{
+    a{
+        display: inline-block;
+        margin: 1rem;
+        > img{
+            height: 50px;
+            width: 50px;
+        }
+    }
+}

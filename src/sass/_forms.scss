@@ -1,0 +1,29 @@
+.form-control{
+
+    &.bordered{
+        border: solid 1px $secondary-color-dark;
+    }
+
+    &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color:    $text-color;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:    $text-color;
+        opacity:  1;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:    $text-color;
+        opacity:  1;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color:    $text-color;
+    }
+}
+
+.control-label{
+    color: $text-color-dark;
+}
+
+.input-group-full {
+    width: 100%;
+}
