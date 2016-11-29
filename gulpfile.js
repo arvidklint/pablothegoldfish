@@ -1,5 +1,4 @@
 var elixir = require('laravel-elixir');
-require('laravel-elixir-vue');
 require('laravel-elixir-browsersync-official');
 
 elixir.config.assetsPath = 'src';
