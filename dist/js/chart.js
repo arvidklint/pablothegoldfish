@@ -43,7 +43,7 @@ var color = d3.scale.linear().domain([1,200])
 // add a "g" element (think "group")
 // annoying d3 gotcha - the 'svg' variable here is a 'g' element
 // the final line sets the transform on <g>, not on <svg>
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#chart").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
@@ -116,7 +116,7 @@ function draw(data) {
   svg.select('.x.axis').transition().duration(300).call(xAxis);
 
   // same for yAxis but with more transform and a title
-  svg.select(".y.axis").transition().duration(300).call(yAxis)
+  svg.select(".y.axis").transition().duration(300).call(yAxis);
 
   // THIS IS THE ACTUAL WORK!
   var bars = barGroup.selectAll(".bar").data(data, function(d) { return d.day; }) // (data) is an array/iterable thing, second argument is an ID generator function
@@ -127,7 +127,7 @@ function draw(data) {
     averageNumber += data[i].water;
   }
   averageNumber /= user.currentDay + 1;
-  console.log(averageNumber);
+  // console.log(averageNumber);
 
   var average = svg.select(".average");
 
@@ -222,11 +222,11 @@ var user = new WaterUser();
 function update(data) {
   user.getLastHour();
   data[user.currentDay].water = user.totalConsumption;
-  if(user.currentDay === 0) {
-    for(var i = 1; i < data.length; i++) {
-      data[i].water = 0;
-    }
-  }
+  // if(user.currentDay === 0) {
+  //   for(var i = 1; i < data.length; i++) {
+  //     data[i].water = 0;
+  //   }
+  // }
   draw(data);
 }
 
